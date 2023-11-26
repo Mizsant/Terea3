@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Alumnos</title>
+  <style>
+    body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+}
+
+form {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+label {
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  background-color: #4c4c4c;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+#resultado {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#resultado h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#academia {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Estilo militar */
+body {
+  background-color: #222;
+  color: #ddd;
+}
+
+h1 {
+  color: #ddd;
+}
+
+form {
+  background-color: #333;
+}
+
+label {
+  color: #ddd;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  background-color: #444;
+  border-color: #777;
+  color: #ddd;
+}
+
+button {
+  background-color: #555;
+  color: #ddd;
+}
+
+#resultado {
+  background-color: #333;
+}
+
+#resultado h2 {
+  color: #ddd;
+}
+
+#academia {
+  color: #ddd;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Registro de Alumnos</h1>
+  
+  <form id="alumnos-form">
+    <label for="cantidad">Cantidad de alumnos (entre 5 y 20):</label>
+    <input type="number" id="cantidad" min="5" max="20" required>
+    <button type="submit">Continuar</button>
+  </form>
+  
+  <div id="registro" style="display: none;">
+    <h2>Ingresar datos de los alumnos:</h2>
+    
+    <div id="alumnos-container">
+      <!-- Aquí se mostrarán los campos de ingreso de datos -->
+    </div>
+    
+    <button id="calcular-btn">Calcular</button>
+  </div>
+  
+  <div id="resultado" style="display: none;">
+    <h2>Alumno/a de mayor edad:</h2>
+    <p id="mayor-edad"></p>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

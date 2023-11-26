@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asignación de Academias Militares</title>
+  <style>
+    body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+}
+
+form {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+label {
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  background-color: #4c4c4c;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+#resultado {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#resultado h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#academia {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Estilo militar */
+body {
+  background-color: #222;
+  color: #ddd;
+}
+
+h1 {
+  color: #ddd;
+}
+
+form {
+  background-color: #333;
+}
+
+label {
+  color: #ddd;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  background-color: #444;
+  border-color: #777;
+  color: #ddd;
+}
+
+button {
+  background-color: #555;
+  color: #ddd;
+}
+
+#resultado {
+  background-color: #333;
+}
+
+#resultado h2 {
+  color: #ddd;
+}
+
+#academia {
+  color: #ddd;
+}
+
+  </style>
+
+</head>
+<body>
+  <h1>Asignacion de Academias Militares</h1>
+  
+  <form id="alumno-form">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" required>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" min="0" required>
+    <label for="genero">Genero:</label>
+    <select id="genero" required>
+      <option value="M">Masculino</option>
+      <option value="F">Femenino</option>
+      <option value="O">Otro</option>
+    </select>
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <div id="resultado" style="display: none;">
+    <h2>Asignacion:</h2>
+    <p id="academia"></p>
+  </div>
+  
+  <script src="script2.js"></script>
+</body>
+</html>
